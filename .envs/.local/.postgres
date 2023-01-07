@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=adverity_swapi
+POSTGRES_USER=fqlliOCyQTTOtqBcIQjsXqXVRuttNesU
+POSTGRES_PASSWORD=djJjcs8N55Nep6YRfin3gCavmsr4IXWJxlGdAOXkoRbXfP24c8LTKBEDTojFLm1l
