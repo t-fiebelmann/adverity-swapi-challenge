@@ -1,5 +1,11 @@
 from django.conf import settings
 from django.urls import include, path
+from rest_framework import routers
+
+from .views import SwapiViewSet
+
+router = routers.DefaultRouter()
+router.register(r'swapi', SwapiViewSet)
 
 urlpatterns = []
 
