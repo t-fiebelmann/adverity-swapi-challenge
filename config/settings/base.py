@@ -63,11 +63,12 @@ DJANGO_APPS = [
     "django.forms",
 ]
 THIRD_PARTY_APPS = [
+    'rest_framework',
+    'corsheaders'
 ]
 
 LOCAL_APPS = [
     "api",
-    # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -116,6 +117,7 @@ MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -262,3 +264,4 @@ SOCIALACCOUNT_FORMS = {"signup": "adverity_swapi.users.forms.UserSocialSignupFor
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+CORS_ALLOW_ALL_ORIGINS = True
